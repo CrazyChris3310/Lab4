@@ -5,7 +5,7 @@ public class Child extends Human {
     }
 
     public void hear(String a) {
-        System.out.println(getName() + " слышит " + a + '.');
+        System.out.println(getName() + " слышит: " + a + '.');
     }
 
     @Override
@@ -27,13 +27,13 @@ public class Child extends Human {
     }
 
     public void regret(Human a){
-        System.out.println(getName() + " жалеет " + a.getNickname() + ".");
+        System.out.println(getName() + " жалеет персонажа " + a.getNickname() + ".");
     }
     public void screech(){
         System.out.println(getName() + " завизжал от смеха.");
     }
     public void promise(Human a){
-        System.out.println(getName() + " обещает помогать "+ a.getNickname() + ".");
+        System.out.println(getName() + " обещает помогать персонажу "+ a.getNickname() + ".");
     }
     public void stole(){
         System.out.println(getName() + " потихоньку подкрадываеться к столу.");
@@ -41,11 +41,11 @@ public class Child extends Human {
     public void sit(){
         System.out.println(getName() + " садиться на стул");
     }
-    public void open(){
-        System.out.println(getName() + " открыл задачник.");
+    public void openBook(){
+        System.out.println(getName() + " открывает задачник.");
     }
     public void waits(){
-        System.out.println(getName() + "ждёт этого момента с огромным напряжением.");
+        System.out.println(getName() + " ждёт когда обернеться ФрекенБок с огромным напряжением.");
     }
 
     @Override

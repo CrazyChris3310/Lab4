@@ -1,3 +1,5 @@
+import org.w3c.dom.ls.LSOutput;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -45,7 +47,26 @@ public class Main {
 
         System.out.println();
 
-        FrekenBok.torture(malish);
+        malish.screech();
+        FrekenBok.think();
+        FrekenBok.runTo(window);
+        FrekenBok.lookThroughWindow();
+        malish.regret(FrekenBok);
+        FrekenBok.lookAt("улицу");
+        FrekenBok.goToMiddleOfRoom();
+        malish.promise(karlson);
+        malish.stole();
+        malish.sit();
+        malish.openBook();
+        malish.hear(FrekenBok.searchInto(cupboard));
+        malish.waits();
+        FrekenBok.swimOut(cupboard);
+        FrekenBok.see(malish);
+        FrekenBok.goBack();
+        FrekenBok.leanOn(cupboard);
+        FrekenBok.stand();
+        FrekenBok.sayNothing();
+        FrekenBok.lowerEyeLashes();
         FrekenBok.sayNothing();
         FrekenBok.stand();
         FrekenBok.think();
@@ -53,6 +74,17 @@ public class Main {
         malish.laugh();
         karlson.fly(window);
         karlson.help(FrekenBok);
+        FrekenBok.noticeNothing();
+        FrekenBok.stand();
+        FrekenBok.sayNothing();
+        FrekenBok.thinkOf("чем-то");
+        FrekenBok.say();
+        FrekenBok.pull(door);
+        FrekenBok.pile(door);
+        System.out.println("Это не помогает.");
+        FrekenBok.cry();
+        FrekenBok.snort();
+        FrekenBok.sit();
 
         System.out.println(karlson);
         System.out.println(malish);

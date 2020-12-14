@@ -44,7 +44,7 @@ public class Domomuch extends Human {
     }
 
     public void lookAt(String a) {
-        System.out.println(getName() + "смотрит на " + a);
+        System.out.println(getName() + " смотрит на " + a);
     }
 
     public void lookThroughWindow() {
@@ -52,15 +52,15 @@ public class Domomuch extends Human {
     }
 
     public void goToMiddleOfRoom() {
-        System.out.println(getName() + "отошла в глубь комнаты");
+        System.out.println(getName() + " отходит в глубь комнаты");
     }
 
-    public void searchInto(Main.Cupboard c) {
-        System.out.println(getName() + "обшаривает" + c.getName());
+    public String searchInto(Main.Cupboard c) {
+        return getName() + " обшаривает " + c.getName();
     }
 
     public void turnAround() {
-        System.out.println(getName() + "оборачивается.");
+        System.out.println(getName() + " оборачивается.");
     }
 
     public void swimOut(Main.Cupboard a) {
@@ -83,7 +83,7 @@ public class Domomuch extends Human {
     public void leanOn(Main.Cupboard a) {
         try {
             checkCupboard(a);
-            System.out.println(getName() + "прислоняется к объекту " + a.getDoors().getName());
+            System.out.println(getName() + " прислоняется к объекту " + a.getDoors().getName());
         } catch (CupboardLockedException e) {
             System.out.println(getName() + " пытается прислониться к шкафу, но дверцы шкафа открыты.");
             System.out.println(getName() + " проваливается в шкаф.");
@@ -104,7 +104,7 @@ public class Domomuch extends Human {
     }
 
     public void pile(Door a){
-        System.out.println(getName() + " наваливаеться на " + a.getName() + ".");
+        System.out.println(getName() + " наваливается на " + a.getName() + ".");
     }
     public void cry(){
         System.out.println(getName() + " ревет.");
@@ -113,7 +113,7 @@ public class Domomuch extends Human {
         System.out.println(getName() + " фырчит от возмущения.");
     }
     public void sit(){
-        System.out.println(getName() + "саиться на стул.");
+        System.out.println(getName() + " садится на стул.");
     }
 
     private void checkDoor(Door d) throws DoorLockedException {

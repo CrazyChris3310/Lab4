@@ -26,6 +26,28 @@ public class Child extends Human {
         System.out.println(getName() + defineMood() + "смеётся.");
     }
 
+    public void regret(Human a){
+        System.out.println(getName() + " жалеет " + a.getNickname() + ".");
+    }
+    public void screech(){
+        System.out.println(getName() + " завизжал от смеха.");
+    }
+    public void promise(Human a){
+        System.out.println(getName() + " обещает помогать "+ a.getNickname() + ".");
+    }
+    public void stole(){
+        System.out.println(getName() + " потихоньку подкрадываеться к столу.");
+    }
+    public void sit(){
+        System.out.println(getName() + " садиться на стул");
+    }
+    public void open(){
+        System.out.println(getName() + " открыл задачник.");
+    }
+    public void waits(){
+        System.out.println(getName() + "ждёт этого момента с огромным напряжением.");
+    }
+
     @Override
     public String toString() {
         return "\nКласс Child" + super.toString();

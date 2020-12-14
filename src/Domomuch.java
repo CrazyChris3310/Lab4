@@ -103,6 +103,19 @@ public class Domomuch extends Human {
         System.out.println(getName() + " думает о " + a);
     }
 
+    public void pile(Door a){
+        System.out.println(getName() + " наваливаеться на " + a.getName() + ".");
+    }
+    public void cry(){
+        System.out.println(getName() + " ревет.");
+    }
+    public void snort(){
+        System.out.println(getName() + " фырчит от возмущения.");
+    }
+    public void sit(){
+        System.out.println(getName() + "саиться на стул.");
+    }
+
     private void checkDoor(Door d) throws DoorLockedException {
         if (d.getState() == State.CLOSED)
             throw new DoorLockedException();
